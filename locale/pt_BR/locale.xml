@@ -991,5 +991,6 @@ A validação pode falhar em URLs para pesquisa que requeiram dados via o métod
 
 	<message key="user.cpf">CPF*</message>
 	<message key="user.cpfExample">Apenas números</message>
+	<message key="user.profile.form.CpfRequired">CPF obrigatório.</message>
 
 </locale>
