@@ -1,0 +1,33 @@
+body{
+	font-family: verdana;
+	font-size: 12pt;
+}
+
+div#navbar{
+	background-color: rgba(254,96,3,.9);
+	height: 40px;
+	line-height: 40px; 
+	border: none;
+	font-size: 13pt;
+	border-radius: 10px;
+}
+
+div{
+	background-color: white;
+}
+
+
+a:link{
+	color: #000000;
+}
+a:visited{
+	color: #000000;
+}
+a:hover{
+	background-color: rgba(255,128,0,.5);
+	padding: 1px;
+	color: #000000;
+}
+a:active{
+	color: #000000;
+}
