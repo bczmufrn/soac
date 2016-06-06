@@ -988,4 +988,8 @@ A validação pode falhar em URLs para pesquisa que requeiram dados via o métod
 	<message key="notification.type.userComment">Um leitor fez um comentário sobre "{$param}".</message>
 	<message key="manager.reviewFormElements.included">Incluído na mensagem ao autor</message>
 	<message key="schedConf.registration.landingPaid">Agradecemos pela sua inscrição! Maiores informações sobre pagamentos serão encaminhadas posteriormente.</message>
+
+	<message key="user.cpf">CPF*</message>
+	<message key="user.cpfExample">Apenas números</message>
+
 </locale>

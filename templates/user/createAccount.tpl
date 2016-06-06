@@ -109,8 +109,8 @@
 </tr>
 
 <tr valign="top">
-	<td class="label">{fieldLabel name="initials" key="user.initials"}</td>
-	<td class="value"><input type="text" id="initials" name="initials" value="{$initials|escape}" size="5" maxlength="5" class="textField" />&nbsp;&nbsp;{translate key="user.initialsExample"}</td>
+	<td class="label">{fieldLabel name="initials" key="user.cpf"}</td>
+	<td class="value"><input type="text" id="initials" name="initials" value="{$initials|escape}" size="20" maxlength="11" class="textField" />&nbsp;&nbsp;{translate key="user.cpfExample"}</td>
 </tr>
 
 <tr valign="top">
