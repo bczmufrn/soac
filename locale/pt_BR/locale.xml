@@ -990,7 +990,9 @@ A validação pode falhar em URLs para pesquisa que requeiram dados via o métod
 	<message key="schedConf.registration.landingPaid">Agradecemos pela sua inscrição! Maiores informações sobre pagamentos serão encaminhadas posteriormente.</message>
 
 	<message key="user.cpf">CPF*</message>
-	<message key="user.cpfExample">Apenas números</message>
+	<message key="user.cpfExample">Apenas números.</message>
 	<message key="user.profile.form.CpfRequired">CPF obrigatório.</message>
+	
+	<message key="user.lattes">Lattes</message>
 
 </locale>
