@@ -18,8 +18,14 @@
 			<li><a href="{url page="user" op="account"}">{translate key="navigation.account"}</a></li>
 		{/if}{* $isUserLoggedIn *}
 
+		{foreach from=$navMenuItems item=navItem}
+			{if $navItem.url != '' && $navItem.name != ''}
+				<li><a href="{if $navItem.isAbsolute}{$navItem.url|escape}{else}{$navItem.url|escape}{/if}">{if $navItem.isLiteral}{$navItem.name|escape}{else}{translate key=$navItem.name}{/if}</a></li>
+			{/if}
+		{/foreach}
+		
 		<li><a href="{url page="search"}">{translate key="navigation.search"}</a></li>
-
+		
 		{if $currentConference}
 			{if $currentSchedConfsExist}<li><a href="{url schedConf="index" page="schedConfs" op="current"}">{translate key="navigation.current"}</a></li>{/if}
 			{if $archivedSchedConfsExist}<li><a href="{url schedConf="index" page="schedConfs" op="archive"}">{translate key="navigation.archive"}</a></li>{/if}
@@ -29,11 +35,7 @@
 
 			{call_hook name="Templates::Common::Header::Navbar::CurrentConference"}
 		{/if}{* $currentConference *}
-
-		{foreach from=$navMenuItems item=navItem}
-			{if $navItem.url != '' && $navItem.name != ''}
-				<li><a href="{if $navItem.isAbsolute}{$navItem.url|escape}{else}{$navItem.url|escape}{/if}">{if $navItem.isLiteral}{$navItem.name|escape}{else}{translate key=$navItem.name}{/if}</a></li>
-			{/if}
-		{/foreach}
+		
+		
 	</ul>
 </div>
