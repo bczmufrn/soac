@@ -88,21 +88,7 @@
 </div>
 
 <div id="body">
-
-
-
-<div id="main">
 {include file="common/navbar.tpl"}
-
-{include file="common/breadcrumbs.tpl"}
-
-<h2>{$pageTitleTranslated}</h2>
-
-{if $pageSubtitle && !$pageSubtitleTranslated}{translate|assign:"pageSubtitleTranslated" key=$pageSubtitle}{/if}
-{if $pageSubtitleTranslated}
-	<h3>{$pageSubtitleTranslated}</h3>
-{/if}
-
 {if $leftSidebarCode || $rightSidebarCode}
 	<div id="sidebar">
 		{if $leftSidebarCode}
@@ -116,6 +102,18 @@
 			</div>
 		{/if}
 	</div>
+{/if}
+
+<div id="main">
+
+
+{include file="common/breadcrumbs.tpl"}
+
+<h2>{$pageTitleTranslated}</h2>
+
+{if $pageSubtitle && !$pageSubtitleTranslated}{translate|assign:"pageSubtitleTranslated" key=$pageSubtitle}{/if}
+{if $pageSubtitleTranslated}
+	<h3>{$pageSubtitleTranslated}</h3>
 {/if}
 
 <div id="content">
